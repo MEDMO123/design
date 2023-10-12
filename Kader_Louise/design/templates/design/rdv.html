@@ -1,0 +1,19 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<form  class="rdv" method="post">
+    {% csrf_token %}    
+    <H3>Rendez-vous</H3>
+    <label for="id_date_rdv">Date</label>
+    <input type="date" name="date_rdv" id="id_date_rdv"><br>
+    <label for="id_objet">Objet</label>
+    <input type="text" name="objet" maxlength="150" id="id_objet"><br>    
+    
+    <input class="btn" type="submit", value="Confirmer">
+    
+</form>
+     
+
+{% endblock content %}
+

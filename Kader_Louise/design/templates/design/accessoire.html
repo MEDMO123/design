@@ -1,0 +1,37 @@
+{% extends 'design/base.html' %}
+
+{% block content%}
+
+<div class="presentation">
+   
+</div>
+<div class="homeaccess">
+    {% for model in models %}
+    <div class="containeraccess">  
+       <img src="{{ model.modele.url }}" >
+       <ul>
+         <li>Collection : {{  model.collection }}</li> <br>
+          <li>Accessoire N°- {{ model.num_accessoire }} : {{ model.nom_accessoire}} </li><br> 
+          <li>{{ model.description }}  </li><br>        
+          <li>Prix : {{ model.prix }}  Fcfa</li>             
+      </ul>
+      <div class="btn_accessoire">     
+         
+         <p><a href="{% url 'cmdaccessoire'  %}">Commander</a></p>
+         
+         {% if perms.design.add_accessoire %}
+            <div class="admin">
+            <p><a href="{% url 'accessoireupdate' model.pk  %}">Modifier</a> </p>
+            <p><a href="{% url 'accessoiredelete' model.pk  %}">Supprimer</a></p>  
+            </div>
+         {% endif %}
+     </div>
+   </div>      
+ {% endfor %}     
+
+</div>
+
+
+{% endblock content%}
+
+

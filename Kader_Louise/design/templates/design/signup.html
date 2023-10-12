@@ -1,0 +1,49 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<form class="signup" method="post">
+  <h3>Nouveau compte</h3>
+  {% csrf_token %}
+  
+   
+    <label for="id_username">Nom d'utilisateur:</label>
+    <input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus required id="id_username"><br>
+      
+  
+    <label for="id_first_name">Prenom:</label>
+    <input type="text" name="first_name" maxlength="150" id="id_first_name"><br>
+     
+  
+    <label for="id_last_name">Nom:</label>
+    <input type="text" name="last_name" maxlength="150" id="id_last_name"><br>
+      
+  
+    <label for="id_email">Email :</label>
+    <input type="email" name="email" maxlength="254" id="id_email"><br>
+  
+  
+    <label for="id_adresse">Adresse:</label>
+    <input type="text" name="adresse" maxlength="100" required id="id_adresse"><br>
+  
+  
+    <label for="id_telephone">Telephone:</label>
+    <input type="text" name="telephone" maxlength="10" required id="id_telephone"><br>
+      
+    <label for="id_password1">Mot de passe:</label>
+    <input type="password" name="password1" autocomplete="new-password" required id="id_password1"><br>
+    
+      <span class="helptext"><ul><li>Le mot de passe doit contenir au moins 8 caratères.</li><li>Votre mot de passe ne peut pas être un mot de passe couramment utilisé.</li><li>Votre mot de passe ne doit pas être entièrement numérique.</li></ul></span>
+      
+    <label for="id_password2">confirmation du mot de passe:</label>
+    <input type="password" name="password2" autocomplete="new-password" required id="id_password2">
+    
+    <input class="btn" type="submit", value="Créer mon compte">
+</form>
+     
+
+{% endblock content %}
+
+
+
+  

@@ -1,0 +1,18 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<form class="signup" method="post">
+  <h3>Nouveau compte</h3>
+  {% csrf_token %}
+  
+    {{ form.as_p }}
+    <input class="btn" type="submit", value="Modifier">
+</form>
+     
+
+{% endblock content %}
+
+
+
+  

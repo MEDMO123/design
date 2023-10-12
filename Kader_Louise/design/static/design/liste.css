@@ -1,0 +1,17 @@
+
+table{
+    width: 100%;
+    border: solid 3px black;
+    margin: 5%;    
+    margin-left: 0%;
+}
+thead{
+    border: solid 3px black;
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 2%;
+        
+}
+

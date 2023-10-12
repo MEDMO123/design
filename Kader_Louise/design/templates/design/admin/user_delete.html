@@ -1,0 +1,14 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<form  class="delete" method="post">
+{% csrf_token  %}
+    <h2>Suppression utilisateur </h2>
+    <label for="">Etes vous sûre de vouloir supprimer ?</label>
+    <input class="btn" type="submit" value="Oui">
+    <a class="btn" href="{% url 'userlist' %}">Non</a>
+
+</form>  
+
+{% endblock content %}

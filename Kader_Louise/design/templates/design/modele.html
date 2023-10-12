@@ -1,0 +1,39 @@
+{% extends 'design/base.html' %}
+
+{% block content%}
+
+<div class="presentation">
+
+  <a href="{% url 'modelehomme'  %}">Homme</a> <a href="{% url 'modelefemme'  %}">Femme</a>
+</div>
+<div class="home">
+    {% for model in models %}
+    <div class="container">  
+       <img src="{{ model.modele.url }}" >
+       <ul>
+         <li>Collection : {{  model.collection }}</li> <br>
+          <li>Modele N°- {{ model.num_modele }} : {{ model.nom_modele}} </li><br>          
+          <li>Taille : {{ model.taille }}</li><br>
+          <li>Prix : {{ model.prix }}  Fcfa</li>             
+      </ul>
+      <div class="btn_modele">
+      
+         <p><a href="{% url 'detailmodele' model.pk  %}">Consulter</a></p>
+         <p><a href="{% url 'cmdmodele'  %}">Commander</a></p>
+         
+         {% if perms.design.add_modele %}
+            <div class="admin">
+            <p><a href="{% url 'modeleupdate' model.pk  %}">Modifier</a> </p>
+            <p><a href="{% url 'modeledelete' model.pk  %}">Supprimer</a></p>  
+            </div>
+         {% endif %}
+     </div>
+   </div>      
+ {% endfor %}     
+
+</div>
+
+
+{% endblock content%}
+
+

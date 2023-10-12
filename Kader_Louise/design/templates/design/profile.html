@@ -1,0 +1,107 @@
+{% extends 'design/base.html' %}
+{% block content%}
+
+<div class="user">
+    <div class="icone">    
+            <img src="../static/design/image/user.png " alt="">   <br> <br>   
+            
+            <a href="{% url 'password_change' %}">Changer mon mot de passe</a><br> <br>   
+            <a href="{% url 'logout' %}">Se deconnecter</a> 
+    </div>
+
+    <div class="sc">
+        <h2>Mes Cordonnées</h2>
+        <ul>
+            <li>Nom d'utilisateur: {{ user.username}}</li>
+            <li>Nom complet:{{ user.first_name}} {{ user.last_name}}</li>
+            <li>Contact: {{ user.telephone}} </li>
+            <li>Mail:  {{ user.email}}</li>
+            <li>Adresse: {{ user.adresse}}</li>
+        </ul>
+    </div>  
+
+</div>  
+
+<div class="historique">
+    <h2>Mes Rendez-vous</h2>
+    <table>
+        <thead>
+            
+            <td>Date</td>
+            <td>Date Rendez-vous</td>      
+            <td>Objet</td>        
+            <td>Confirmé</td>
+           
+        </thead>
+    {% for rdv in rdvs %}
+        {% if user.username in rdv.client.username %} 
+            <tr>
+       
+                <td>{{ rdv.date}}</td>
+                <td>{{ rdv.date_rdv}}</td>
+                <td>{{ rdv.objet}}</td>       
+                <td>{{ rdv.confirme}}</td>
+                
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </table><br>
+
+    <h2>Mes Commandes de Modeles</h2>
+    <table>
+        <thead>
+           
+            <td>Modele</td>
+            <td>Date commande</td>
+            <td>Taille</td>            
+            <td>Prix</td>
+            <td>Reception </td>
+            <td>Confirmée</td>
+           
+        </thead>
+    {% for cmdmodele in cmdmodeles %}
+        {% if user.username in cmdmodele.client.username %} 
+            <tr>               
+                <td>{{ cmdmodele.modele}}</td>
+                <td>{{ cmdmodele.date}}</td>
+                <td>{{cmdmodele.modele.taille}}</td>            
+                <td>{{ cmdmodele.modele.prix}}</td>
+                <td>{{ cmdmodele.reception}}</td> 
+                <td>{{cmdmodele.confirme}}</td>            
+            </tr>
+        {% endif %}
+    {% endfor %}
+   
+    </table><br>
+
+    <h2>Mes Commandes  Accessoires</h2>
+    <table>
+        <thead>
+          
+            <td>Accessoire</td>
+            <td>Date commande</td>               
+            <td>Prix</td>
+            <td>Reception </td>
+            <td>Confirmée</td>
+            
+        </thead>
+    {% for cmdaccessoire in cmdaccessoires %}
+        {% if user.username in cmdaccessoire.client.username %} 
+            <tr>
+               
+                <td> {{ cmdaccessoire.accessoire}}</td>
+                <td>{{ cmdaccessoire.date}}</td>                 
+                <td>{{ cmdaccessoire.accessoire.prix}}</td>
+                <td>{{ cmdaccessoire.reception}}</td> 
+                <td>{{ cmdaccessoire.confirme}}</td>
+            </tr>
+        {% endif %}
+    {% endfor %}        
+ 
+    </table>
+    
+
+</div>
+
+
+{% endblock content%}

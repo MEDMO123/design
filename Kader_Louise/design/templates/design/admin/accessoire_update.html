@@ -1,0 +1,15 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<form  class="update" method="post">
+    {% csrf_token %}    
+    <H3>Modification Accessoire</H3>
+    {{form.as_p}}
+    <input class="btn" type="submit", value="Modifier">
+    
+</form>
+     
+
+{% endblock content %}
+

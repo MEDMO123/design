@@ -1,0 +1,26 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+<table>
+    <thead>
+        <td>Client</td>
+        <td>Date</td>
+        <td>Date Rendez-vous</td>      
+        <td>Objet</td>        
+        <td>Confirmation</td>
+        <td>Modifier</td>
+        <td>Supprimer</td>
+    </thead>
+    {% for model in models %}
+    <tr>
+        <td> {{ model.client.username}}</td>
+        <td> {{ model.date}}</td>
+        <td>{{ model.date_rdv}}</td>
+        <td>{{ model.objet}}</td>       
+        <td>{{ model.confirme}}</td>
+        <td><a href="{% url 'rdvupdate' model.pk %}"><img src="../../static/design/image/modifier.png  " alt="icon" /></a></td> 
+        <td><a href="{% url 'rdvdelete' model.pk %}"><img src="../../static/design/image/supprimer.png  " alt="icon" /></a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

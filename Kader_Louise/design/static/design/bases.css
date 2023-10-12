@@ -1,0 +1,456 @@
+header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100px;
+    padding: 2%;
+    margin-bottom: 2%;    
+    box-shadow: inset 1px 2px 10px 12px rgba(212, 127, 37, 0.81);   
+  }
+  header img{
+    height: 100px;  
+    weight:100px;
+    margin: 1%;
+    margin-left: 3%;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none; 
+    margin-left: 2%;  
+  }
+  nav ul li{
+    list-style: none;  
+    margin: 1%;
+    padding: 2%;  
+    justify-content: space-between;
+    text-decoration-line: underline;
+    text-decoration-color:rgba(212, 127, 37, 0.81) ;
+  }
+  nav ul li a{
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: bold;  
+    text-decoration: none;
+  }
+  nav ul li a:hover{
+    background-color: rgba(212, 127, 37, 0.81);
+    color: antiquewhite;
+    text-decoration-style:double ;
+    font-weight: bold;c
+ 
+  }
+
+  footer{
+    height: 250px;
+    background-color: rgba(212, 127, 37, 0.81) ;   
+  }
+  .infos{
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .lien a{
+    color: black;
+    text-decoration: none;
+  }
+  .signature{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 1024px){
+    header{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 70px;
+      padding: 2%;
+      margin-bottom: 0%;    
+      box-shadow: inset 1px 2px 10px 12px rgba(212, 127, 37, 0.81);   
+    }
+    header img{
+      height: 70px;  
+      weight:100px;
+      margin: 1%;
+      margin-left: 3%;
+    }
+    nav ul{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style: none; 
+      margin-left: 0%;  
+    }
+    nav ul li{
+      list-style: none;  
+      margin: 1%;
+      padding: 2%;  
+      justify-content: space-between;
+      text-decoration-line: underline;
+      text-decoration-color:rgba(212, 127, 37, 0.81) ;
+    }
+    nav ul li a{
+      font-size: 15px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: black;
+      font-weight: bold;  
+      text-decoration: none;
+    }
+    nav ul li a:hover{
+      background-color: rgba(212, 127, 37, 0.81);
+      color: antiquewhite;
+      text-decoration-style:double ;
+      font-weight: bold;c
+   
+    }
+  
+    footer{
+      height: 500px;
+      background-color: rgba(212, 127, 37, 0.81) ;   
+    }
+    .infos{
+      display: grid;
+      margin-left: 10%;
+      grid-template-columns: 33% 33% 33%;
+    }
+    .signature{
+      font-size: 15px;
+      font-weight: bold;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+
+  @media (max-width: 540px){
+    header{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 80px;
+      padding: 2%;
+      margin-bottom: 2%;    
+      box-shadow: inset 1px 2px 10px 12px rgba(212, 127, 37, 0.81);   
+    }
+    header img{
+      height: 60px;  
+      weight:100px;
+      margin-top: 10%;
+      margin-left: 12%;
+    }
+    nav ul{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style: none; 
+      margin-left: 0%;  
+    }
+    nav ul li{
+      list-style: none;  
+      margin: 1%;
+      padding: 2%;  
+      justify-content: space-between;
+      text-decoration-line: underline;
+      text-decoration-color:rgba(212, 127, 37, 0.81) ;
+    }
+    nav ul li a{
+      font-size: 12px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: black;
+      font-weight: bold;  
+      text-decoration: none;
+    }
+    nav ul li a:hover{
+      background-color: rgba(212, 127, 37, 0.81);
+      color: antiquewhite;
+      text-decoration-style:double ;
+      font-weight: bold;
+   
+    }
+  
+    footer{
+      height: 700px;
+      background-color: rgba(212, 127, 37, 0.81) ;   
+    }
+    .infos{      
+      margin-left: 33%;
+      display: flex;
+      flex-direction: column;
+    }
+    .signature{
+      font-size: 15px;
+      font-weight: bold;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+
+
+  @media (max-width: 414px){
+    header{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 70px;
+      padding: 2%;
+      margin-bottom: 0%;    
+      box-shadow: inset 1px 2px 10px 12px rgba(212, 127, 37, 0.81);   
+    }
+    header img{
+      height: 50px;  
+      weight:100px;
+      margin-top: 13%;
+      margin-left: 12%;
+    }
+    nav ul{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style: none; 
+      margin-left: 0%;  
+    }
+    nav ul li{
+      list-style: none;  
+      margin: 1%;
+      padding: 2%;  
+      justify-content: space-between;
+      text-decoration-line: underline;
+      text-decoration-color:rgba(212, 127, 37, 0.81) ;
+    }
+    nav ul li a{
+      font-size: 9px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: black;
+      font-weight: bold;  
+      text-decoration: none;
+    }
+    nav ul li a:hover{
+      background-color: rgba(212, 127, 37, 0.81);
+      color: antiquewhite;
+      text-decoration-style:double ;
+      font-weight: bold;c
+   
+    }
+  
+    footer{
+      height: 750px;
+      background-color: rgba(212, 127, 37, 0.81) ;   
+    }
+    .infos{      
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+    }
+    .signature{
+      font-size: 15px;
+      font-weight: bold;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+
+ 
+ 
+  @media (max-width:  375px){
+    header{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 70px;
+      padding: 2%;
+      margin-left: -2%;    
+      box-shadow: inset 1px 2px 10px 12px rgba(212, 127, 37, 0.81);   
+    }
+    header img{
+      height: 50px;  
+      weight:100px;
+      margin-top: 13%;
+      margin-left: 12%;
+    }
+    nav ul{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style: none; 
+      margin-left: 0%;  
+    }
+    nav ul li{
+      list-style: none;  
+      margin: 1%;
+      margin-left: -2%; 
+      padding: 2%;  
+      justify-content: space-between;
+      text-decoration-line: underline;
+      text-decoration-color:rgba(212, 127, 37, 0.81) ;
+    }
+    nav ul li a{
+      font-size: 8px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: black;
+      font-weight: bold;  
+      text-decoration: none;
+    }
+    nav ul li a:hover{
+      background-color: rgba(212, 127, 37, 0.81);
+      color: antiquewhite;
+      text-decoration-style:double ;
+      font-weight: bold;c
+   
+    }
+  
+    footer{
+      height: 750px;
+      background-color: rgba(212, 127, 37, 0.81) ;   
+    }
+    .infos{      
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+    }
+    .signature{
+      font-size: 15px;
+      font-weight: bold;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+ 
+  @media (max-width:  395px){
+    header{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 70px;
+      padding: 2%;
+      margin-left: 0%;    
+      box-shadow: inset 1px 2px 10px 12px rgba(212, 127, 37, 0.81);   
+    }
+    header img{
+      height: 50px;  
+      weight:100px;
+      margin-top: 13%;
+      margin-left: 12%;
+    }
+    nav ul{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style: none; 
+      margin-left: 0%;  
+    }
+    nav ul li{
+      list-style: none;  
+      margin: 1%;
+      margin-left: -3%; 
+      padding: 2%;  
+      justify-content: space-between;
+      text-decoration-line: underline;
+      text-decoration-color:rgba(212, 127, 37, 0.81) ;
+    }
+    nav ul li a{
+      font-size: 8px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: black;
+      font-weight: bold;  
+      text-decoration: none;
+    }
+    nav ul li a:hover{
+      background-color: rgba(212, 127, 37, 0.81);
+      color: antiquewhite;
+      text-decoration-style:double ;
+      font-weight: bold;c
+   
+    }
+  
+    footer{
+      height: 700px;
+      background-color: rgba(212, 127, 37, 0.81) ;   
+    }
+    .infos{      
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+    }
+    .signature{
+      font-size: 15px;
+      font-weight: bold;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+ 
+  @media (max-width:  280px){
+    header{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 70px;
+      padding: 2%;
+      margin-left: 0%;    
+      box-shadow: inset 1px 2px 10px 12px rgba(212, 127, 37, 0.81);   
+    }
+    header img{
+      height: 40px;  
+      weight:80px;
+      margin-top: 35%;
+      margin-left: 18%;
+    }
+    nav ul{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style: none; 
+      margin-left:-6%;  
+    }
+    nav ul li{
+      list-style: none;  
+      margin: 1%;
+      margin-left: -3%; 
+      padding: 2%;  
+      justify-content: space-between;
+      text-decoration-line: underline;
+      text-decoration-color:rgba(212, 127, 37, 0.81) ;
+    }
+    nav ul li a{
+      font-size: 7px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: black;
+      font-weight: bold;  
+      text-decoration: none;
+    }
+    nav ul li a:hover{
+      background-color: rgba(212, 127, 37, 0.81);
+      color: antiquewhite;
+      text-decoration-style:double ;
+      font-weight: bold;c
+   
+    }
+  
+    footer{
+      height: 700px;
+      background-color: rgba(212, 127, 37, 0.81) ;   
+    }
+    .infos{      
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+    }
+    .signature{
+      font-size: 15px;
+      font-weight: bold;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+ 

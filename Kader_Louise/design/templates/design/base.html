@@ -1,0 +1,89 @@
+<html lang="fr">
+<head>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="../../static/design/bases.css">
+    <link rel="stylesheet" href="../../static/design/login.css">
+    <link rel="stylesheet" href="../../static/design/signups.css">
+    <link rel="stylesheet" href="../../static/design/rdv.css">
+    <link rel="stylesheet" href="../../static/design/cmd.css">
+    <link rel="stylesheet" href="../../static/design/delete.css">
+    <link rel="stylesheet" href="../../static/design/modeles.css">
+    <link rel="stylesheet" href="../../static/design/accessoire.css">
+    <link rel="stylesheet" href="../../static/design/detail_modele.css">
+    <link rel="stylesheet" href="../../static/design/detail_accessoire.css">
+    <link rel="stylesheet" href="../../static/design/update.css">
+    <link rel="stylesheet" href="../../static/design/updatemdp.css">
+    <link rel="stylesheet" href="../../static/design/cmd_update.css">
+    <link rel="stylesheet" href="../../static/design/admin.css">
+    <link rel="stylesheet" href="../../static/design/liste.css">
+    <link rel="stylesheet" href="../../static/design/profile.css">
+   
+    <title>Kader & Louise</title>   
+</head>
+<body>
+   <header>  
+    
+    <div class="header">
+        <img src="../../static/design/image/logo.jpg" alt="image">  
+      
+    </div>
+
+    <nav>
+        <ul >
+            <li><a href="{% url 'modele' %}">Modeles</a></li>   
+            <li><a href="{% url 'accessoire' %}">Accessoires</a></li>     
+            <li><a href="{% url 'rdv' %}">Rencontre</a></li> 
+            <li><a href="{% url 'profile' %}">Compte</a></li>         
+            <li><a href="{% url 'signup' %}">Inscription</a></li> 
+            {% if perms.design.add_modele %}
+                <li><a href="{% url 'adminkl' %}">Administration</a></li>
+            {% endif %}
+            
+              
+        </ul><br>        
+    </nav>    
+   </header>
+   
+        
+    {% block content %}
+
+    {% endblock content %}
+    <footer id="info"> 
+                  
+            <div class="infos">
+                <div class="contact">
+                     <h2>Nos contacts</h2>
+                    <ul>
+                        <li><img src="../../static/design/image/mail.jpg  " alt="image" />kader&louise@gmail.com</li>
+                        <li><img src="../../static/design/image/telephone.jpg" alt="image" />77 666 33 99</li>
+                        <li><img src="../../static/design/image/wsp.jpg" alt="icon" />77 65 47 90 </li>
+                    </ul>
+                </div>
+                <div class="localisation" >
+                    <h2>localisation</h2>
+                    <ul>
+                        <li><img src="../../static/design/image/localisation.jpg" alt="icon" />Thiès Grand-Standing</li>
+                        <li><img src="../../static/design/image/localisation.jpg" alt="icon" /> Dakar,Scat Urbam</li>
+                        <li><img src="../../static/design/image/horloge.jpg" alt="icon" /> Tous les jours/09-20H </li>
+                    </ul>
+                </div>
+                <div class="lien">
+                    <h2>Visiter nos pages</h2>
+                    <ul>
+                        <li><img src="../../static/design/image/insta.jpg" alt="icon" /><a href="https://www.instagram.com/accounts/login/">Instagram</a></li>
+                        <li><img src="../../static/design/image/fb.jpg" alt="icon" /><a href="https://m.facebook.com/login/">Facebook</a></li>
+                        <li><img src="../../static/design/image/tiktok.jpg" alt="icon" /><a href="https://www.tiktok.com/login">TikTok</a></li>
+                        <li><img src="../../static/design/image/twiter.jpg" alt="icon" /><a href="https://twitter.com/">Twiter</a></li>
+                    </ul>
+                    
+                </div>
+               
+            </div>           
+      
+        <div class="signature"><p>&copy; Copyright 2023 Kader & Louise Tous droits réservés.</p></div>
+        
+    </footer>
+</body>  
+</html> 

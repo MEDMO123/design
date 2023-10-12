@@ -1,0 +1,16 @@
+{%extends 'design/base.html'%}
+     
+{% block content %}
+<div class="links">
+     <div class="link">
+         <li><a href="{% url 'rdvlist' %}">  Rendez-vous</a></li> 
+         <li><a href="{% url 'cmdmodelelist' %}"> Commandes modeles</a></li>     
+         <li><a href="{% url 'cmdaccessoirelist' %}">Commandes accesssoireS</a></li> 
+         <li><a href="{% url 'modelepost' %}"> Nouveau modele</a></li> 
+         <li><a href="{% url 'accessoirepost' %}">Nouvel accessoire</a></li>    
+         <li><a href="{% url 'userlist' %}">Nos Clients</a></li>           
+     </div>
+</div>
+
+ 
+ {% endblock content %}

@@ -1,0 +1,113 @@
+.rdv{
+    width: 450px;
+    height: 350px;
+    margin: 10%;
+    box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);
+    margin-left: 30%;
+}
+.rdv h3{   
+    text-align: center;
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    box-shadow: 3px 3px 3px rgba(212, 127, 37, 0.81) ;
+    
+}
+.rdv label{
+    padding: 6%;    
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.rdv input{
+    position: relative;
+    margin: 5%;
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: antiquewhite;
+    font-size: 18px;
+}
+.rdv .btn{
+    position: relative;
+    margin-left: 35%;    
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.rdv .btn:hover{
+    background-color:  rgb(253, 253, 253);
+    color:rgba(212, 127, 37, 0.81)  ;
+    font-size:23px;
+    padding: 1%;
+    font-weight: bold;   
+    box-shadow: 7px 7px 7px 7px rgba(212, 127, 37, 0.81) ; 
+}
+
+
+@media (max-width:1024px){
+    .rdv{
+        height: 350px;    
+        margin-left: 30%;    
+        box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);        
+    }
+}
+@media (max-width:768px){
+    .rdv{
+        width: 400px;
+        height: 330px;
+        margin: 10%;
+        box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);
+        margin-left: 23%;
+    }
+}
+@media (max-width:540px){
+    .rdv{
+        width: 400px;
+        height: 330px;
+        margin: 10%;
+        box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);
+        margin-left: 15%;
+    }
+}
+
+
+@media (max-width:414px){
+    .rdv{
+        width: 290px;
+        height: 330px;
+        margin: 10%;
+        box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);
+        margin-left: 15%;
+    }
+    .rdv .btn{
+        position: relative;
+        margin-left: 18%;    
+        background-color:rgba(212, 127, 37, 0.81) ;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+}
+@media (max-width:375px){
+    .rdv{
+        width: 290px;
+        height: 330px;
+        margin: 10%;
+        box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);
+        margin-left: 8%;
+    }
+    .rdv .btn{
+        position: relative;
+        margin-left: 18%;    
+        background-color:rgba(212, 127, 37, 0.81) ;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+}
+@media (max-width:280px){
+    .rdv{
+        width: 250px;
+        height: 330px;
+        margin: 10%;
+        box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);
+        margin-left: 0%;
+    }
+}

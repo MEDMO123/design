@@ -1,0 +1,32 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<table>
+    <thead>
+        <td>Client</td>
+        <td>Modele</td>
+        <td>Date commande</td>
+        <td>Taille</td>            
+        <td>Prix</td>
+        <td>Reception </td>
+        <td>Confirmation</td>
+        <td>Modifier</td>
+        <td>Supprimer</td>
+    </thead>
+    {% for model in models %}
+    <tr>
+        <td> {{ model.client.username}}</td>
+        <td> {{ model.modele.nom_modele}}</td>
+        <td>{{ model.date}}</td>
+        <td>{{ model.taille}}</td>            
+        <td>{{ model.modele.prix}}</td>
+        <td>{{ model.reception}}</td> 
+        <td>{{ model.confirme}}</td>
+        <td><a href="{% url 'cmdmodeleupdate' model.pk %}"><img src="../../static/design/image/modifier.png  " alt="icon" /></a></td> 
+        <td><a href="{% url 'cmdmodeledelete' model.pk %}"><img src="../../static/design/image/supprimer.png  " alt="icon" /></a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}

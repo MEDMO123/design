@@ -1,0 +1,14 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<form class="cmd" method="Post">
+
+{% csrf_token %}
+<h3>Commande Modèle</h3>
+
+{{ form.as_p }}
+<input class="btn" type="submit", value="Commander">
+</form>
+
+{% endblock content %}

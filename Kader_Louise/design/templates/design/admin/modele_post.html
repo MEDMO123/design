@@ -1,0 +1,15 @@
+{% extends 'design/base.html' %}
+
+{% block content %}
+
+<form  class="update" method="post" enctype="multipart/form-data">
+    {% csrf_token %}    
+    <H3>Ajouter un Modele</H3>
+    {{form.as_p}}
+    <input class="btn" type="submit", value="Ajouter">
+    
+</form>
+     
+
+{% endblock content %}
+

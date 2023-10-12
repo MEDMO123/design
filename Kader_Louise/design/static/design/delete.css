@@ -1,0 +1,48 @@
+
+.delete {
+    width: 500px;
+    height: 200px;    
+    box-shadow: 6px 6px 6px 6px rgba(212, 127, 37, 0.81);
+    margin-left: 400px;
+    margin-top: 7%;
+}
+.delete label{
+    font-size: 25px;
+    font-weight: bold;
+    margin:5%;
+}
+.delete h2{   
+    text-align: center;
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    box-shadow: 3px 3px 3px rgba(212, 127, 37, 0.81) ;
+    
+}
+
+.delete input{
+    position: relative;
+    margin-top: 5%;
+    
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.delete .btn{
+    position: relative;
+    margin-left: 25%;    
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.delete .btn a{
+    position: relative;
+    margin-left: 30%; 
+    padding:2%;   
+    background-color:rgba(212, 127, 37, 0.81) ;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+
